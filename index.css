@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-screen container */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #176B87, #B4D4FF);
+}
+
+/* Glassmorphism card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Text styles */
+.glass-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.glass-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input, select, and button styling */
+.glass-card input, .glass-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.glass-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEF5FF;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0.4rem #dfd9d9;
+}
+
+/* Favicon container styling */
+.favicon-container {
+    margin-top: 20px;
+}
+
+.favicon-container p {
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+.favicon-container img {
+    /* width: 64px; 
+    height: 64px; */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    display: none; 
+}
+
+.download-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.download-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #86B6F6;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    disabled: true;
+    box-shadow: 0 0.4rem #dfd9d9;
+}
+
+.download-buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background: #86B6F6;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 20px;
+    }
+
+    .glass-card h1 {
+        font-size: 20px;
+    }
+
+    .glass-card p {
+        font-size: 14px;
+    }
+
+    .glass-card button {
+        padding: 8px 16px;
+    }
+
+    .favicon-container img {
+        width: 48px; 
+        height: 48px;
+    }
+}

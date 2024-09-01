@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Graber</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h1>Favicon Grabber</h1>
+            <p>Enter the URL of the website to grab its favicon.</p>
+            <input type="text" placeholder="Enter website URL..." id="input">
+            <p>Select Icon Size:</p>
+            <select id="icon-size">
+                <option value="16">16x16</option>
+                <option value="32">32x32</option>
+                <option value="64">64x64</option>
+                <option value="128">128x128</option>
+            </select>
+            <button onclick="startIT()">Grab Favicon</button>
+            <div class="favicon-container">
+                <center><img id="favicon-preview" src="" alt="Favicon will appear here"></center>
+                <br>
+                <p>Developed By Dhairya Vora <i class='bx bxs-heart bx-flashing' style='color:#ff0000' ></i></p>
+            </div>
+            <div class="download-buttons">
+                <button id="download-png" onclick="downloadFavicon('png')" disabled>Download PNG</button>
+                <button id="download-svg" onclick="downloadFavicon('svg')" disabled>Download SVG</button>
+            </div>
+        </div>
+    </div>
+   <script src="index.js"></script> 
+</body>
+</html>
